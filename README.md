@@ -10,4 +10,4 @@ Statische One-Page-Website (HTML/CSS, keine Abhängigkeiten), aufgebaut nach dem
 ## Offene To-dos vor Go-live
 - [ ] Kontakt-Link / Calendly in `#bewerben` (aktuell `kontakt@…`)
 - [ ] Foto in der „Über uns“-Sektion
-- [ ] Impressum: Anschrift, HRB, USt-ID, Kontakt ergänzen (UG & GF sind eingetragen); Datenschutz erstellen
+- [ ] Impressum: Anschrift, HRB, USt-ID, Kontakt ergänzen (UG & GF sind eingetragen); Datenschutz erstellen (Hosting: GitHub Pages; Schriften sind lokal eingebunden, keine Google-Fonts-Verbindung)
