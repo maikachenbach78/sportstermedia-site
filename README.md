@@ -8,6 +8,6 @@ Statische One-Page-Website (HTML/CSS, keine Abhängigkeiten), aufgebaut nach dem
 3. Der Workflow `.github/workflows/pages.yml` veröffentlicht automatisch.
 
 ## Offene To-dos vor Go-live
-- [ ] Kontakt-Link / Calendly in `#bewerben` (aktuell `kontakt@example.com`)
+- [ ] Kontakt-Link / Calendly in `#bewerben` (aktuell `kontakt@…`)
 - [ ] Foto in der „Über uns“-Sektion
-- [ ] Impressum & Datenschutz mit echten Angaben des rechtlichen Betreibers
+- [ ] Impressum: Anschrift, HRB, USt-ID, Kontakt ergänzen (UG & GF sind eingetragen); Datenschutz erstellen
