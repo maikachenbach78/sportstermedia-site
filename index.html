@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sportstermedia – Wachstum für Fitness- & Supplement-Händler</title>
+<meta name="description" content="Sportstermedia hilft Fitness- und Supplement-Händlern im D-A-CH-Raum, mit SEO, GEO und E-Commerce-Systemen profitabel zu wachsen. Done-With-You statt Agentur-Blackbox.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0a; --bg2:#121212; --line:#262626; --text:#f5f5f5; --muted:#a3a3a3;
+  --accent:#e8ff3a; --accent-ink:#0a0a0a; --light:#f4f4f2; --light-ink:#111;
+  --max:1180px; --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Archivo Black",Inter,sans-serif;font-weight:400;line-height:1.05;letter-spacing:-.01em;text-transform:uppercase}
+h1{font-size:clamp(2.6rem,7.5vw,6rem)}
+h2{font-size:clamp(2rem,4.8vw,3.6rem)}
+h3{font-size:1.35rem}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:16px 28px;border-radius:999px;font-weight:600;font-size:1rem;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-ghost{border:1px solid #444;color:var(--text)}
+.btn-ghost:hover{border-color:var(--text)}
+section{padding:110px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:56px}
+.section-head p{max-width:460px;color:var(--muted)}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:"Archivo Black";font-size:1.25rem;letter-spacing:.02em}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:30px;font-size:.95rem;color:var(--muted)}
+.navlinks a:hover{color:var(--text)}
+.nav-cta{padding:10px 20px;font-size:.9rem}
+.burger{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
+@media(max-width:900px){
+  .navlinks{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line)}
+  .navlinks.open{display:flex}
+  .navlinks a{padding:16px 20px;border-top:1px solid var(--line)}
+  .burger{display:block}
+  .nav-cta{display:none}
+}
+
+/* hero */
+.hero{padding:120px 0 90px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -20% -60% auto;width:70vw;height:70vw;background:radial-gradient(closest-side,rgba(232,255,58,.13),transparent);pointer-events:none}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{font-size:clamp(1.1rem,2vw,1.35rem);color:var(--muted);max-width:640px;margin:28px 0 40px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+/* stats */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:44px 24px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:"Archivo Black";font-size:clamp(2rem,4vw,3rem);font-weight:400}
+.stat span{color:var(--muted);font-size:.92rem}
+@media(max-width:800px){.stats .grid{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* mission (light) */
+.light{background:var(--light);color:var(--light-ink)}
+.light .eyebrow,.light .section-head p{color:#555}
+.mission .cols{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:start}
+.mission p{font-size:1.2rem;margin-bottom:20px}
+.mission .quote{font-family:"Archivo Black";font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.15;text-transform:uppercase;border-left:6px solid var(--light-ink);padding-left:24px}
+@media(max-width:850px){.mission .cols{grid-template-columns:1fr;gap:40px}}
+
+/* services cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:34px 30px;display:flex;flex-direction:column;gap:14px;transition:border-color .2s}
+.card:hover{border-color:#555}
+.card .num{font-family:"Archivo Black";color:var(--accent);font-size:.95rem}
+.card p{color:var(--muted)}
+.card ul{list-style:none;margin-top:auto;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:8px;font-size:.93rem}
+.card li::before{content:"→ ";color:var(--accent)}
+@media(max-width:900px){.cards{grid-template-columns:1fr}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--light-ink)}
+.step{padding:30px 24px 0 0}
+.step b{font-family:"Archivo Black";font-size:3rem;display:block;line-height:1}
+.step h3{margin:14px 0 10px}
+.step p{color:#444;font-size:.97rem}
+@media(max-width:850px){.steps{grid-template-columns:1fr 1fr;row-gap:40px}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* track record */
+.track{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.tr-item{border:1px solid var(--line);border-radius:var(--r);padding:36px;background:var(--bg2)}
+.tr-item .tag{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent);padding:4px 10px;border-radius:999px;margin-bottom:18px;font-weight:600}
+.tr-item p{color:var(--muted);margin-top:10px}
+.tr-item dl{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.tr-item dt{font-family:"Archivo Black";font-size:1.5rem}
+.tr-item dd{font-size:.82rem;color:var(--muted)}
+@media(max-width:850px){.track{grid-template-columns:1fr}}
+
+/* resources */
+.res{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.res a{display:block;border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid #ddd;transition:transform .2s}
+.res a:hover{transform:translateY(-4px)}
+.res .cover{aspect-ratio:4/3;display:flex;align-items:end;padding:24px;background:var(--light-ink);color:#fff}
+.res .cover h3{font-size:1.5rem}
+.res .cover.alt{background:var(--accent);color:var(--accent-ink)}
+.res .cover.alt2{background:#2b2b2b}
+.res .body{padding:22px 24px}
+.res .body p{color:#555;font-size:.95rem}
+.res .body span{display:inline-block;margin-top:12px;font-weight:600;font-size:.9rem}
+@media(max-width:900px){.res{grid-template-columns:1fr}}
+
+/* about */
+.about .cols{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:var(--r);background:linear-gradient(160deg,#1d1d1d,#0f0f0f);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:#555;font-size:.9rem;text-align:center;padding:20px}
+.about p{color:var(--muted);margin-bottom:18px;font-size:1.08rem}
+.about p strong{color:var(--text)}
+@media(max-width:850px){.about .cols{grid-template-columns:1fr}}
+
+/* faq */
+.faq details{border-top:1px solid #ccc;padding:24px 0}
+.faq details:last-child{border-bottom:1px solid #ccc}
+.faq summary{cursor:pointer;list-style:none;font-weight:600;font-size:1.15rem;display:flex;justify-content:space-between;gap:20px}
+.faq summary::after{content:"+";font-size:1.5rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:14px;color:#444;max-width:780px}
+
+/* final cta */
+.final{text-align:center;padding:140px 0}
+.final h2{max-width:900px;margin:0 auto 26px}
+.final p{color:var(--muted);max-width:560px;margin:0 auto 40px;font-size:1.15rem}
+.final small{display:block;margin-top:18px;color:#777}
+
+footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);font-size:.92rem}
+footer .grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:var(--text);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--text)}
+footer .legal{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:700px){footer .grid{grid-template-columns:1fr}}
+@media(max-width:600px){section{padding:80px 0}.hero{padding:80px 0 70px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#" class="logo">SPORTSTER<span>MEDIA</span></a>
+      <div class="navlinks" id="navlinks">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#erfahrung">Erfahrung</a>
+        <a href="#ressourcen">Gratis-Ressourcen</a>
+        <a href="#ueber">Über uns</a>
+      </div>
+      <a href="#bewerben" class="btn btn-primary nav-cta">Erstgespräch anfragen</a>
+      <button class="burger" aria-label="Menü" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Für Fitness- & Supplement-Händler im D-A-CH-Raum</p>
+    <h1 style="margin-top:18px">Mehr Umsatz.<br>Weniger Chaos.<br><em>Systeme, die bleiben.</em></h1>
+    <p class="lead">Wir bauen mit dir die Sichtbarkeit, die Prozesse und das Angebot, die deinen Shop profitabel machen – in Google, in KI-Suchen und an der Kasse. Done-With-You statt Agentur-Blackbox.</p>
+    <div class="ctas">
+      <a href="#bewerben" class="btn btn-primary">Kostenloses Erstgespräch →</a>
+      <a href="#ressourcen" class="btn btn-ghost">Gratis-Audit-Checkliste</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Kennzahlen">
+  <div class="wrap grid">
+    <div class="stat"><b>12+</b><span>Jahre Fitness- & Supplement-Handel</span></div>
+    <div class="stat"><b>18.000+</b><span>Newsletter-Abonnenten aufgebaut</span></div>
+    <div class="stat"><b>4,7 ★</b><span>bei 860+ Trustpilot-Bewertungen</span></div>
+    <div class="stat"><b>1 Exit</b><span>Onlineshop aufgebaut & verkauft</span></div>
+  </div>
+</section>
+
+<section class="light mission">
+  <div class="wrap cols">
+    <div>
+      <p class="eyebrow">Warum es uns gibt</p>
+      <h2 style="margin:16px 0 30px">Händler wachsen nicht durch mehr Arbeit.</h2>
+      <p>Die meisten Fitness- und Supplement-Shops haben kein Traffic-Problem, kein Produkt-Problem und kein Fleiß-Problem. Sie haben ein <strong>System-Problem</strong>: Produktseiten, die nicht ranken, ein Newsletter, der schläft, und Zahlen, die niemand anschaut.</p>
+      <p>Wir haben diese Fehler selbst gemacht – und die Lösungen selbst gebaut. Genau das geben wir weiter.</p>
+    </div>
+    <div class="quote">„Wir verkaufen keine Stunden. Wir bauen mit dir Assets, die auch dann noch arbeiten, wenn wir weg sind.“</div>
+  </div>
+</section>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="eyebrow">Leistungen</p><h2 style="margin-top:14px">Drei Hebel.<br>Ein Ziel.</h2></div>
+      <p>Wir arbeiten nur dort, wo der größte Hebel liegt. Kein Bauchladen, kein Retainer ohne Ergebnis.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="num">01</span>
+        <h3>SEO & Produktseiten</h3>
+        <p>Produkt- und Kategorieseiten, die ranken und verkaufen – technisch sauber, inhaltlich stark.</p>
+        <ul><li>Keyword- & Wettbewerbsanalyse</li><li>Produktseiten-Templates</li><li>JTL-/Shopware-/Shopify-Umsetzung</li></ul>
+      </article>
+      <article class="card">
+        <span class="num">02</span>
+        <h3>GEO & AEO</h3>
+        <p>Sichtbar werden, wenn Kunden ChatGPT, Perplexity oder Google AI fragen, was sie kaufen sollen.</p>
+        <ul><li>Prompt-Audit deiner Marke</li><li>Zitierfähige Inhalte & Off-Site-Signale</li><li>Monitoring der KI-Sichtbarkeit</li></ul>
+      </article>
+      <article class="card">
+        <span class="num">03</span>
+        <h3>E-Mail & Angebot</h3>
+        <p>Newsletter, Automationen und Angebote, die aus Besuchern Stammkunden machen.</p>
+        <ul><li>Welcome- & Reorder-Flows</li><li>Angebots- & Bundle-Strategie</li><li>Copy, die verkauft</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="ablauf" class="light">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="eyebrow">Ablauf</p><h2 style="margin-top:14px">So arbeiten wir.</h2></div>
+      <p>Done-With-You: Du bekommst Strategie, Vorlagen und Umsetzung an deiner Seite – und behältst das Know-how im Haus.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Diagnose</h3><p>30-Minuten-Erstgespräch und Audit: Wo verlierst du heute Umsatz?</p></div>
+      <div class="step"><b>2</b><h3>Plan</h3><p>Ein 90-Tage-Plan mit den drei Maßnahmen mit dem größten Hebel.</p></div>
+      <div class="step"><b>3</b><h3>Umsetzung</h3><p>Wöchentliche Sessions, Vorlagen und technische Umsetzung mit deinem Team.</p></div>
+      <div class="step"><b>4</b><h3>Übergabe</h3><p>Dokumentierte Prozesse und klare KPIs – damit es ohne uns weiterläuft.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="erfahrung">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="eyebrow">Erfahrung</p><h2 style="margin-top:14px">Selbst gebaut.<br>Nicht nur beraten.</h2></div>
+      <p>Unsere Methoden kommen aus echten Shops mit echtem Lager, echten Kunden und echten Zahlen.</p>
+    </div>
+    <div class="track">
+      <div class="tr-item">
+        <span class="tag">Online · verkauft</span>
+        <h3>Supplement-Onlineshop</h3>
+        <p>Von 0 aufgebaut auf JTL Shop & Wawi, mit Google Shopping, Meta Ads, Preisvergleich-Partnerschaften und eigenem Newsletter. Erfolgreich an einen internationalen Käufer verkauft.</p>
+        <dl><div><dt>18k+</dt><dd>Newsletter</dd></div><div><dt>4,7★</dt><dd>Trustpilot</dd></div><div><dt>Exit</dt><dd>verkauft</dd></div></dl>
+      </div>
+      <div class="tr-item">
+        <span class="tag">Stationär · seit 2014</span>
+        <h3>Fitness-Fachhandel</h3>
+        <p>Stationäres Geschäft seit 2014, seit 2019 in Münster. Ladenbau, Kassensystem, Warenwirtschaft, Einkauf und Controlling aus der Praxis.</p>
+        <dl><div><dt>2014</dt><dd>gegründet</dd></div><div><dt>POS</dt><dd>+ Wawi</dd></div><div><dt>B2B</dt><dd>8 J. Vertrieb</dd></div></dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ressourcen" class="light">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="eyebrow">Gratis-Ressourcen</p><h2 style="margin-top:14px">Erst lernen.<br>Dann reden.</h2></div>
+      <p>Alles, was wir kostenlos teilen, kannst du sofort umsetzen – auch wenn wir nie zusammenarbeiten.</p>
+    </div>
+    <div class="res">
+      <a href="#bewerben"><div class="cover"><h3>Produktseiten-Checkliste</h3></div><div class="body"><p>27 Punkte, die eine Produktseite zum Ranken und Verkaufen braucht.</p><span>Kostenlos anfordern →</span></div></a>
+      <a href="#bewerben"><div class="cover alt"><h3>KI-Sichtbarkeits-Audit</h3></div><div class="body"><p>Prüfe in 15 Minuten, ob ChatGPT & Co. deinen Shop empfehlen.</p><span>Kostenlos anfordern →</span></div></a>
+      <a href="#bewerben"><div class="cover alt2"><h3>Newsletter-Flows für Shops</h3></div><div class="body"><p>Die 4 Automationen, die jeder Supplement-Shop haben sollte.</p><span>Kostenlos anfordern →</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="ueber" class="about">
+  <div class="wrap cols">
+    <div class="portrait">[ Foto Maik Achenbach – noch einfügen ]</div>
+    <div>
+      <p class="eyebrow">Über uns</p>
+      <h2 style="margin:14px 0 28px">Händler für Händler.</h2>
+      <p><strong>Maik Achenbach</strong> hat über 12 Jahre im Fitness- und Supplement-Handel gearbeitet – stationär und online – und davor 8 Jahre im B2B-Außendienst verkauft. SEO für Produktseiten, Newsletter und Copy sind seine Lieblingsdisziplinen.</p>
+      <p>Mit <strong>André Piwonka</strong> an der technischen Seite setzen wir nicht nur Strategien auf, sondern bauen sie direkt in deinen Shop.</p>
+      <p>Unser Anspruch: ruhiges, sauberes Wachstum. Kein Hype, keine Hacks – Systeme, die du verstehst.</p>
+    </div>
+  </div>
+</section>
+
+<section class="light faq">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">FAQ</p><h2 style="margin-top:14px">Häufige Fragen</h2></div></div>
+    <details><summary>Für wen ist Sportstermedia geeignet?</summary><p>Für Inhaber von Fitness-Shops und Supplement-Marken im D-A-CH-Raum, die bereits Umsatz machen und jetzt planbar und profitabel wachsen wollen.</p></details>
+    <details><summary>Was heißt Done-With-You?</summary><p>Wir übernehmen Strategie und schwierige Umsetzungsteile, dein Team macht mit. So entsteht Wissen in deinem Unternehmen statt Abhängigkeit von einer Agentur.</p></details>
+    <details><summary>Mit welchen Shopsystemen arbeitet ihr?</summary><p>Schwerpunkt JTL Shop & Wawi, außerdem Shopware, Shopify und WooCommerce.</p></details>
+    <details><summary>Was kostet eine Zusammenarbeit?</summary><p>Das hängt vom Umfang ab. Im Erstgespräch klären wir, ob es passt – und du bekommst ein klares Festpreis-Angebot.</p></details>
+  </div>
+</section>
+
+<section id="bewerben" class="final">
+  <div class="wrap">
+    <p class="eyebrow">Nächster Schritt</p>
+    <h2 style="margin-top:18px">Lass uns herausfinden, wo dein größter Hebel liegt.</h2>
+    <p>30 Minuten, kostenlos, ohne Verkaufsdruck. Du gehst mit mindestens einer konkreten Maßnahme raus.</p>
+    <a href="mailto:kontakt@example.com?subject=Erstgespr%C3%A4ch%20Sportstermedia" class="btn btn-primary">Erstgespräch anfragen →</a>
+    <small>Wir nehmen pro Quartal nur eine begrenzte Zahl an Kunden auf.</small>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div><a href="#" class="logo">SPORTSTER<span>MEDIA</span></a><p style="margin-top:14px;max-width:340px">SEO, GEO & E-Commerce-Systeme für Fitness- und Supplement-Händler im D-A-CH-Raum.</p></div>
+      <div><h4>Seiten</h4><ul><li><a href="#leistungen">Leistungen</a></li><li><a href="#ablauf">Ablauf</a></li><li><a href="#ressourcen">Ressourcen</a></li><li><a href="#ueber">Über uns</a></li></ul></div>
+      <div><h4>Rechtliches</h4><ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="y"></span> Sportstermedia</span><span>Münster · Deutschland</span></div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));</script>
+</body>
+</html>
